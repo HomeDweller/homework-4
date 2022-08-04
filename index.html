@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css"
+        integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Account-form</title>
+</head>
+
+<body>
+    <form action="account-creation" class="creation">
+        <h1>Create an account</h1>
+        <div class="name">
+            <label class="creation-info">
+                First name
+                <input type="text" class="text-input">
+            </label>
+            <label class="creation-info">
+                Last name
+                <input type="text" class="text-input">
+            </label>
+        </div>
+        <div class="e-mail">
+            <label class="creation-info">
+                E-mail
+                <input type="email" class="email">
+            </label>
+            <p class="email-desc">We'll never share your email with anyone else.</p>
+        </div>
+        <div class="gender-select">
+            <label class="gender">
+                <input type="radio" name="gender">
+                Male
+            </label>
+            <label class="gender">
+                <input type="radio" name="gender">
+                Female
+            </label>
+        </div>
+        <div class="location">
+            <label class="place">
+                Country
+                <select name="country">
+                    <option value="Select" class="select">Select</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Any other country">Any other country</option>
+                </select>
+            </label>
+            <label class="place">
+                City
+                <input type="text" class="text-input">
+            </label>
+        </div>
+        <button class="sign-up">Sign up</button>
+        <div class="bottom">
+            <p class="sign-up-desc">By clicking the 'Sign Up' button, you confirm that you accept our <br>
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Terms of Use</a> and
+                <a href="https://youtu.be/dxJyI8Vl46Y" target="_blank">Privacy Policy</a>
+            </p>
+            <hr>
+            <p class="login">
+                Have an account?
+                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="log-in">
+                    Log In
+                </a>
+            </p>
+        </div>
+    </form>
+
+    <form action="pofile-settings">
+        <h1>Profile</h1>
+        <div class="pfp-selection">
+            <img src="/img/Image.png" alt="Profile picture">
+            <label class="photo">
+                <input type="text" placeholder="" class="image">
+            </label>
+            <button disabled class="reset">
+                <svg class="trash">
+                    <use xlink:href="/img/trash-can.svg#Trash"></use>
+                </svg>
+            </button>
+        </div>
+        <p class="bottom-text">
+            Up to 1 MB (300x300 px)
+        </p>
+        <div class="name-and-email">
+            <label class="creation-info">
+                Name
+                <input type="text" class="text-input">
+            </label>
+            <label class="creation-info">
+                E-mail
+                <input type="email" class="text-input">
+            </label>
+        </div>
+        <div class="location">
+            <label class="place">
+                Country
+                <select name="country" id="select-country">
+                    <option value="" selected class="select">
+                        Select
+                        <svg class="icon">
+                            <use xlink:href="/img/selector.svg#selector"></use>
+                        </svg>
+                    </option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Any other country">Any other country</option>
+                </select>
+            </label>
+            <label class="place">
+                City
+                <input type="text" class="text-input">
+            </label>
+        </div>
+        <div class="contacts">
+            <label class="zip-code">
+                Zip Code
+                <input type="text" class="text-input">
+            </label>
+            <label class="phone-number">
+                Phone number
+                <input type="tel" class="text-input">
+            </label>
+        </div>
+        <button disabled class="button">Update</button>
+    </form>
+
+
+</body>
+
+</html>
